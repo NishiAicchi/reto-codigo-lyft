@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.color {
+  background: linear-gradient(45deg, #520060 50%, #e70a8b);
+}
+.container-col-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
