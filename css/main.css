@@ -4,11 +4,12 @@
   padding: 0;
 }
 .color {
-  background: linear-gradient(45deg, #520060 50%, #e70a8b);
+  background: linear-gradient(300deg, #520060 40%, #e70a8b);
 }
 .container-col-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   height: 100vh;
 }
