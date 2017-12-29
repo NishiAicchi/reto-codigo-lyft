@@ -14,19 +14,31 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-color vw100" align="center">
-          <form action="">
-            <a href="home.html" class="pull-left"><span class="glyphicon glyphicon-menu-left"aria-hidden="true"></span></a>
-              <h1>Sign Up</h1>
-              <p>Join now for free ride credit</p>
-              <hr>
-            <select name="country" id="country" class="dropout">
-              <option value="">Country</option>
-              <input type="number" name="" id="phone-number">
-              <p>We'll send a Text to verify your phone</p>
-              <button type="button" class=" btn btn-block" disabled>Send</button>
-            </select>
-    
-          </form>
+          <form action="" class="form-style">
+            <a href="home.html" class="pull-left back-btn"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            <h3>SIGN UP</h3>
+            <P>Join now for free ride credit</P>
+            <hr>
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="dLabel">Country  <span class="caret"></span></button>
+                  <ul class="dropdown-menu country-menu" aria-labelledby="dLabel">
+                    <li role="presentation">
+                      <img src="../assets/icons/flags/usa.png" alt="" class="img-responsive"></li>
+                    <li role="presentation">
+                      <img src="../assets/icons/flags/brazil.png" alt="" class="img-responsive"></li>
+                    <li role="presentation">
+                      <img src="../assets/icons/flags/spain.png" alt="" class="img-responsive"></li>
+                    <li role="presentation">
+                      <img src="../assets/icons/flags/peru.png" alt="" class="img-responsive"></li>
+                  </ul>
+              </div>
+              <input type="number" class="form-control">
+            </div>
+            <br>
+            <p>We'll send a text to verify your phone</p>
+              <a href="verify.html" class="btn-block btn-lg btn-next">Next</a>
+          </div>
         </div>
       </div>
     </div>

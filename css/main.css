@@ -45,11 +45,14 @@ body {
 .vw100 {
   width: 85vw;
 }
-
+/* sección SIGN UP */
+.form-style {
+  padding: 2vh 5vw;
+}
 .country-menu {
   flex-direction: column;
   align-items: center;
-  min-width: 30px;
+  min-width: 50px;
   padding: 0.5em;
 }
 .country-menu ul {
@@ -57,4 +60,12 @@ body {
 }
 .country-input {
   width: 10px;
+}
+.back-btn {
+  color: #e70a8b;
+  font-size: 1em;
+}
+.btn-next {
+  border: 1px solid #520060;
+  
 }
