@@ -3,13 +3,28 @@
   margin: 0;
   padding: 0;
 }
-.color {
-  background: linear-gradient(300deg, #520060 40%, #e70a8b);
+
+body {
+  font-family: 'Raleway', Arial;
+  display: flex;
+  color: #ffffff;
 }
-.container-col-flex {
+.bkgr-color {
+  background: linear-gradient(rgb(82,0,96) 45%, rgb(231,10,139));
+  width: 100%;
+}
+.vh100 {
+  height: 100vh;;
+}
+.flexbox-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  height: 100vh;
+  align-items: center;
+}
+.padding2em {
+  padding: 2em;
+}
+.height {
+  height: 100px;
 }
