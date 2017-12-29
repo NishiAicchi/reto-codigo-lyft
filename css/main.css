@@ -45,6 +45,16 @@ body {
 .vw100 {
   width: 85vw;
 }
-.a {
-  width: 25px;
+
+.country-menu {
+  flex-direction: column;
+  align-items: center;
+  min-width: 30px;
+  padding: 0.5em;
+}
+.country-menu ul {
+  list-style: none;
+}
+.country-input {
+  width: 10px;
 }
