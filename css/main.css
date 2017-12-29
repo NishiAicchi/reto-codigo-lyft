@@ -7,14 +7,13 @@
 body {
   font-family: 'Raleway', Arial;
   display: flex;
-  color: #ffffff;
 }
 .bkgr-color {
   background: linear-gradient(rgb(82,0,96) 45%, rgb(231,10,139));
   width: 100%;
 }
 .vh100 {
-  height: 100vh;;
+  height: 100vh;
 }
 .flexbox-1 {
   display: flex;
@@ -25,6 +24,27 @@ body {
 .padding2em {
   padding: 2em;
 }
-.height {
-  height: 100px;
+.opacity {
+  opacity: .5;
+}
+/* Sección HOME */
+.btn-home {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+}
+.bkgr-image {
+  background-image: url('../assets/images/bkgr-home.jpg');
+  background-repeat: no-repeat;
+}
+/* Sección SIGNUP */
+.text-color {
+  color: 
+  #575757;
+}
+.vw100 {
+  width: 85vw;
+}
+.a {
+  width: 25px;
 }

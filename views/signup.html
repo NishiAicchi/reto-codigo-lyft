@@ -9,23 +9,33 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>LYFT</title>
 </head>
-<body>
-  <div class="container-col-flex">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-          </div>
+<body class="vh100">
+  <main class="flexbox-1 padding2em">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-color vw100" align="center">
+          <form action="">
+            <a href="home.html" class="pull-left"><span class="glyphicon glyphicon-menu-left"aria-hidden="true"></span></a>
+              <h1>Sign Up</h1>
+              <p>Join now for free ride credit</p>
+              <hr>
+            <select name="country" id="country" class="dropout">
+              <option value="">Country</option>
+              <input type="number" name="" id="phone-number">
+              <p>We'll send a Text to verify your phone</p>
+              <button type="button" class=" btn btn-block" disabled>Send</button>
+            </select>
+    
+          </form>
         </div>
       </div>
-  </div>
-
-
-
+    </div>
+  </main>
+ 
 
     <!-- enlazando framework y libreria -->
   <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../js/home.js"></script>
+  <script src="../js/signup.js"></script>
 </body>
 </html>
