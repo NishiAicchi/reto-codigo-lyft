@@ -37,6 +37,9 @@ body {
   background-image: url('../assets/images/bkgr-home.jpg');
   background-repeat: no-repeat;
 }
+.vw50 {
+  padding: 50vw;
+}
 /* Sección SIGNUP */
 .text-color {
   color: 
@@ -66,6 +69,31 @@ body {
   font-size: 1em;
 }
 .btn-next {
-  border: 1px solid #520060;
-  
+  background-color: #e70a8b;
+  color: #ffffff;
+}
+/* sección VERIFY*/
+.input-style input {
+  width: 2em;
+  border: #ffffff;
+  border-bottom: 2px solid #520060;
+  box-shadow: 0;
+}
+/* sección DATES */
+.name {
+  width: 45px;
+}
+.double-input .form-control{
+  width: 50%;
+  border-collapse: inherit;
+}
+.double-input .first {
+  border-right-width: 0px;
+}
+.double-input .last {
+  border-left-width: 0px;
+}
+.input-2 {
+  height: 40px;
+  width: 100%;
 }
