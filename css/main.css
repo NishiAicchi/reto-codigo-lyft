@@ -19,13 +19,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: space-around;
   align-items: center;
 }
 .padding2em {
-  padding: 2em;
-}
-.opacity {
-  opacity: .5;
+  padding: 2.1em;
 }
 /* Sección HOME */
 .btn-home {
@@ -36,6 +34,7 @@ body {
 .bkgr-image {
   background-image: url('../assets/images/bkgr-home.jpg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 .vw50 {
   padding: 50vw;
@@ -49,6 +48,10 @@ body {
   width: 85vw;
 }
 /* sección SIGN UP */
+.back-btn {
+  color: #e70a8b;
+  font-size: 1em;
+}
 .form-style {
   padding: 2vh 5vw;
 }
@@ -64,13 +67,15 @@ body {
 .country-input {
   width: 10px;
 }
-.back-btn {
-  color: #e70a8b;
-  font-size: 1em;
+.btn-flag {
+  padding: 0 10px 0 10px;
 }
 .btn-next {
   background-color: #e70a8b;
   color: #ffffff;
+}
+.height {
+  height: 46vh;
 }
 /* sección VERIFY*/
 .input-style input {
@@ -79,6 +84,11 @@ body {
   border-bottom: 2px solid #520060;
   box-shadow: 0;
 }
+/* insertar */
+.icon16 {
+  height: 3vh;
+ }
+
 /* sección DATES */
 .name {
   width: 45px;
@@ -96,4 +106,10 @@ body {
 .input-2 {
   height: 40px;
   width: 100%;
+}
+/* sección COMPLETE */
+
+.icon {
+  font-size: 120px;
+  color: #ffffff;
 }

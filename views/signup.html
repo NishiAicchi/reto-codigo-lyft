@@ -21,23 +21,24 @@
               <hr>
             <div class="input-group">
               <div class="input-group-btn">
-                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="dLabel">Country  <span class="caret"></span></button>
+                <button id="dropdownMenu" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="dLabel">
+                  <span>Country</span>
+                  <span class="caret"></span>
+                </button>
                   <ul class="dropdown-menu country-menu" aria-labelledby="dLabel">
-                    <li role="presentation">
-                      <img src="../assets/icons/flags/usa.png" alt="" class="img-responsive"></li>
-                    <li role="presentation">
-                      <img src="../assets/icons/flags/brazil.png" alt="" class="img-responsive"></li>
-                    <li role="presentation">
-                      <img src="../assets/icons/flags/spain.png" alt="" class="img-responsive"></li>
-                    <li role="presentation">
-                      <img src="../assets/icons/flags/peru.png" alt="" class="img-responsive"></li>
+                    <li data-option="0">
+                      <img src="../assets/icons/flags/usa.ico" alt="estados unidos" id="USA"></li>
+                    <li data-option="1">
+                      <img src="../assets/icons/flags/brazil.ico" alt="brazil" id="BR"></li>
+                    <li data-option="2">
+                      <img src="../assets/icons/flags/PE.ico" alt="peru" id="PE"></li>
                   </ul>
               </div>
-              <input type="number" class="form-control">
+              <input id="phone-number" type="number" class="form-control" disabled>
             </div>
             <br>
             <p>We'll send a text to verify your phone</p>
-              <a href="verify.html" class="btn-block btn-lg btn-next">Next</a>
+              <button id="next-btn" class="btn-block btn-lg btn-next"disabled>Next</a>
           </div>
         </div>
       </div>
