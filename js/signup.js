@@ -5,7 +5,7 @@ $(document).ready(function() {
   var $btn = $('#next-btn');
 
   // declarando variables
-  var count = 0;
+  var count;
   var validatePhone = false;
   var MINCHARACTER = 11;
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
     switch (true) {
     case count === 0:
       $('#USA').replaceAll($('#dropdownMenu :first-child'));
-      $phone.val('1');
+      $phone.val('01');
       break;
     case count === 1:
       $('#BR').replaceAll($('#dropdownMenu :first-child'));
@@ -31,7 +31,8 @@ $(document).ready(function() {
     $('#dropdownMenu').addClass('btn-flag');
     // habilitando el input
     $phone.attr('disabled', false);
-    codeLength = $phone.val().length;    
+    codeLength = $phone.val().length;  
+    console.log(codeLength);
   });
 
   // evento para validar el numero telefonico ingresado
@@ -39,9 +40,9 @@ $(document).ready(function() {
   $phone.on('keyup', function(e) {
     // console.log($(this).val().length);
     $phoneLength = $(this).val().length;
-    
     if ($phoneLength === MINCHARACTER) {
       $phone.attr('disabled', 'disabled');
+      $phoneValue = $phoneLength - codeLength;
       validatePhone = true;
       activateBtn();
     } else if ($phoneLength < MINCHARACTER) {
@@ -67,7 +68,7 @@ $(document).ready(function() {
     alert('Tu codigo LAB es ' + labCode)
     //
     localStorage.code = labCode;
-    localStorage = $phone.val();
+    localStorage.phone = $phone.val();
     window.location.href = 'verify.html';
   });
 });
