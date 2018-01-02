@@ -118,6 +118,9 @@ body {
   .home-img {
     padding-left: 8vw;
   }
+  .home-img:hover {
+    filter: blur(5px);
+  }
   .vw100 {
     width: 94vw;
   }
@@ -129,6 +132,8 @@ body {
     padding: 2em 5em 2em 5em;
   }
   .btn-home:hover {
-    
+    background-color: #e70a8b;
+    color: #520060;
+    transition: all .5s ease-in-out;
   }
 }
