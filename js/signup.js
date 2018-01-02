@@ -44,6 +44,7 @@ $(document).ready(function() {
       $phone.attr('disabled', 'disabled');
       $phoneValue = $phoneLength - codeLength;
       validatePhone = true;
+
       activateBtn();
     } else if ($phoneLength < MINCHARACTER) {
       validatePhone = false;
@@ -54,6 +55,8 @@ $(document).ready(function() {
   // Evento para activar boton
   function activateBtn() {
     $btn.attr('disabled', false);
+    $btn.removeClass('offBtn');
+    $btn.addClass('onBtn');
   };
 
   // Evento para desactivar botón
@@ -64,7 +67,7 @@ $(document).ready(function() {
   // Evento del botón "NEXT"
   $btn.on('click', function(e) {
     e.preventDefault();
-    labCode = Math.floor(Math.random() * 990) + 100;
+    labCode = Math.floor(Math.random() * 899) + 100;
     alert('Tu codigo LAB es ' + labCode)
     //
     localStorage.code = labCode;

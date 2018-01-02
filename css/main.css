@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: 'Raleway', Arial;
-  display: flex;
+  font-family: 'Comfortaa', cursive;
 }
 .bkgr-color {
   background: linear-gradient(rgb(82,0,96) 45%, rgb(231,10,139));
@@ -19,11 +18,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: space-around;
+  align-content: space-between;
   align-items: center;
 }
 .padding2em {
   padding: 2.1em;
+}
+.onBtn {
+  background-color: #e70a8b;
+  color: #ffffff;
+}
+.offBtn {
+  background-color: #dfdfdf;
+  color: #b2b2b296;
+  border: none;
 }
 /* Sección HOME */
 .btn-home {
@@ -70,18 +78,14 @@ body {
 .btn-flag {
   padding: 0 10px 0 10px;
 }
-.btn-next {
-  background-color: #e70a8b;
-  color: #ffffff;
-}
 .height {
   height: 46vh;
 }
 /* sección VERIFY*/
 .input-style input {
-  width: 2em;
+  width: 4em;
   border: #ffffff;
-  border-bottom: 2px solid #520060;
+  border-bottom: 2px dashed #520060;
   box-shadow: 0;
 }
 
@@ -109,7 +113,6 @@ body {
   width: 100%;
 }
 /* sección COMPLETE */
-
 .icon {
   font-size: 120px;
   color: #ffffff;

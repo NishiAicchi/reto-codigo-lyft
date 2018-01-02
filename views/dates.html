@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="shortcut icon" href="../assets/images/logo-pink.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -12,43 +13,50 @@
   <title>Complete</title>
 </head>
 <body class="vh100">
-  <main class="flexbox-1 padding2em">
+  <main class="flexbox-1 padding2em vh100">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-color vw100" align="center">
+          <a href="verify.html" class="pull-left back-btn"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 vw100 text-center">
           <form class="form-style">
-            <a href="verify.html" class="pull-left back-btn"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-              <h3>Sign Up</h3>
+            <h3>Sign Up</h3>
               <p>Join now for free ride credit</p>
               <hr>
               <div class="input-group row">
                 <span class="input-group-addon">
                   <i class="material-icons">perm_identity</i>
                 </span>
-               <div class="input-group double-input">
-                <input type="text" name="firstname" id="first" class="form-control first input-2" placeholder=" First Name">
-                <input type="text" name="lastname" id="last" class="form-control last input-2" placeholder="Last Name">
+                <div class="input-group double-input">
+                  <input type="text" name="firstname" id="first" class="form-control first input-2" placeholder=" First Name">
+                  <input type="text" name="lastname" id="last" class="form-control last input-2" placeholder="Last Name">
                 </div>
               </div>
-            <br>
-            <div class="input-group row">
-              <span class="input-group-addon">
-                <i class="material-icons">email</i>
-              </span>
+                <br>
+              <div class="input-group row">
+                <span class="input-group-addon">
+                  <i class="material-icons">email</i>
+                </span>
                 <div class="input-group input-2">
                   <input type="email" name="email" id="email" class="form-control input-2" placeholder="Email">
                 </div>
-            </div>
-            <br>
-            <label class="checkbox">
-              <input type="checkbox" value="agree">I agree to Lyft´s <a href="#">Terms of Service</a>
-            </label>
-            <a href="complete.html" type="button" class="btn-lg btn-block btn-next text-center" disabled="disabled">Next</a>
-          </form>
+              </div>
+                <br>
+              <label class="checkbox">
+                <input id="checkbox" type="checkbox" value="agree">I agree to Lyft´s <a href="#">Terms of Service</a>
+              </label>
+            </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 vw100">
+          <button id="next-btn" type="button" class="btn-lg btn-block offBtn text-center"disabled>Next</button>
         </div>
       </div>
     </div>
-
   </main>
 
     <!-- enlazando framework y libreria -->
