@@ -65,7 +65,7 @@ $(document).ready(function() {
   // Evento del botón "NEXT"
   $btn.on('click', function(e) {
     e.preventDefault();
-    labCode = Math.floor(Math.random() * 899) + 100;
+    labCode = Math.floor(Math.random() * 800) + 100;
     alert('Tu codigo LAB es ' + labCode)
     
     // almacenando en la memoria local 

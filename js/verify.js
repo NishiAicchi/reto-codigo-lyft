@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   // evento que genera nuevo codigo
   $reCode.on('click', function(e) {
-    labCode = Math.floor(Math.random() * 899) + 100;
+    labCode = Math.floor(Math.random() * 800) + 100;
     alert('Tu codigo LAB es ' + labCode);
     localStorage.code = labCode;
     $labCode.attr('disabled', false);
