@@ -136,8 +136,8 @@ body {
     padding: 2em 5em 2em 5em;
   }
   .btn-home:hover {
-    background-color: #e70a8b;
-    color: #520060;
+    background-color: #520060;
+    color: #e70a8b;
     transition: all .5s ease-in-out;
   }
 }
