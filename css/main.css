@@ -31,6 +31,10 @@ body {
   background-color: #e70a8b;
   color: #ffffff;
 }
+.onBtn:hover {
+  background-color: #520060;
+  transition: all .7s ease-in-out;
+}
 .offBtn {
   background-color: #dfdfdf;
   color: #b2b2b296;
@@ -45,6 +49,7 @@ body {
 .btn-home:hover {
   background-color: #ffffff;
   color: #e70a8b;
+  transition: all .4s ease-in-out;
 }
 .bkgr-image {
   background-image: url('../assets/images/bkgr-home.jpg');
@@ -123,21 +128,21 @@ body {
     padding-left: 8vw;
   }
   .home-img:hover {
-    filter: blur(5px);
+    filter: blur(3px);
   }
   .vw100 {
     width: 94vw;
   }
   .btn-home {
-    border: 2px solid #ffffff;
+    border: 2px solid #e70a8b;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     padding: 2em 5em 2em 5em;
   }
   .btn-home:hover {
-    background-color: #520060;
+    background-color: #ffffff;
     color: #e70a8b;
-    transition: all .5s ease-in-out;
+    transition: all .8s ease-in-out;
   }
 }

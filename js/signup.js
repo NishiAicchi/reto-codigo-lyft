@@ -14,16 +14,16 @@ $(document).ready(function() {
     count = $(this).data('option');
     switch (true) {
     case count === 0:
-      $('#USA').replaceAll($('#dropdownMenu :first-child'));
-      $phone.val('01');
+      $('#PE').replaceAll($('dropdownMenu :first-child'));
+      $phone.val('51');
       break;
     case count === 1:
       $('#BR').replaceAll($('#dropdownMenu :first-child'));
       $phone.val('55');
       break;
     case count === 2:
-      $('#PE').replaceAll($('dropdownMenu :first-child'));
-      $phone.val('51');
+      $('#USA').replaceAll($('#dropdownMenu :first-child'));
+      $phone.val('01');
       break;
     }
 
