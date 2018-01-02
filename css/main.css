@@ -96,12 +96,6 @@ body {
   background-color: #dfdfdf;
 }
 /* sección DATES */
-.name {
-  width: 45px;
-}
-.double-input .form-control{
-  width: 129%;
-}
 .double-input .last {
   border-left-width: 0px;
 }
