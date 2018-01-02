@@ -42,6 +42,10 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+.btn-home:hover {
+  background-color: #ffffff;
+  color: #e70a8b;
+}
 .bkgr-image {
   background-image: url('../assets/images/bkgr-home.jpg');
   background-repeat: no-repeat;
