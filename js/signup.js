@@ -32,13 +32,11 @@ $(document).ready(function() {
     // habilitando el input
     $phone.attr('disabled', false);
     codeLength = $phone.val().length;  
-    console.log(codeLength);
   });
 
   // evento para validar el numero telefonico ingresado
 
   $phone.on('keyup', function(e) {
-    // console.log($(this).val().length);
     $phoneLength = $(this).val().length;
     if ($phoneLength === MINCHARACTER) {
       $phone.attr('disabled', 'disabled');
@@ -69,7 +67,8 @@ $(document).ready(function() {
     e.preventDefault();
     labCode = Math.floor(Math.random() * 899) + 100;
     alert('Tu codigo LAB es ' + labCode)
-    //
+    
+    // almacenando en la memoria local 
     localStorage.code = labCode;
     localStorage.phone = $phone.val();
     window.location.href = 'verify.html';

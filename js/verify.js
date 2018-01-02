@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $labCode = $('#lab-code');
   $phoneShow = $('h6');
-  $reCode = $('re-code');
+  $reCode = $('#re-code');
   $btn = $('#next-btn');  
 
   // mostrando el numero registrado
@@ -17,6 +17,16 @@ $(document).ready(function() {
       desactiveBtn();
     }
   });
+
+  // evento que genera nuevo codigo
+  $reCode.on('click', function(e) {
+    labCode = Math.floor(Math.random() * 899) + 100;
+    alert('Tu codigo LAB es ' + labCode);
+    localStorage.code = labCode;
+    $labCode.attr('disabled', false);
+    $labCode.val('');
+  });
+
 
   // funcion que activa el boton
   function activateBtn() {
@@ -35,4 +45,5 @@ $(document).ready(function() {
     e.preventDefault();
     window.location.href = 'dates.html';
   });
+
 });

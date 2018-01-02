@@ -12,20 +12,45 @@
   <title>Log In</title>
 </head>
 <body class="vh100">
-  <main class= "flexbox padding2em vh100">
+  <main class= "flexbox-1 padding2em vh100">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 vw100">
-          <a href="verify.html" class="pull-left back-btn"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            <a href="home.html" class="pull-left back-btn"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 vh100" align="center">
-          <form action="">
+        <div class="col-xs-12 vw100" align="center">
+          <form class="form-style">
             <h1>Log In</h1>
+            <p>enter your registered data</p>
+            <hr>
+            <div class="input-group row">
+              <span class="input-group-addon">
+                  <i class="material-icons">perm_identity</i>
+                </span>
+                <div class="input-group input-2">
+                  <input type="text" name="name" id="name" class="form-control first input-2" placeholder="Name">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input-group row">
+              <span class="input-group-addon">
+                <i class="material-icons">email</i>
+              </span>
+              <div class="input-group input-2">
+                <input type="email" name="email" id="email" class="form-control input-2" placeholder="Email">
+              </div>
+            </div>
           </form>
         </div>
       </div>
+      <div class="row">
+          <div class="col-xs 12 padding50vh">
+            <button id="next-btn" type="button" class="btn-lg btn-block offBtn text-center"disabled>Next</button>
+          </div>
+        </div>
     </div>
   </main>
 

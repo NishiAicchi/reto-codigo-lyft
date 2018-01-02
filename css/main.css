@@ -11,6 +11,9 @@ body {
   background: linear-gradient(rgb(82,0,96) 45%, rgb(231,10,139));
   width: 100%;
 }
+.padding50vh {
+  padding-top: 20vh;
+}
 .vh100 {
   height: 100vh;
 }
@@ -43,9 +46,6 @@ body {
   background-image: url('../assets/images/bkgr-home.jpg');
   background-repeat: no-repeat;
   background-position: center;
-}
-.vw50 {
-  padding: 50vw;
 }
 /* Sección SIGNUP */
 .text-color {
@@ -88,12 +88,13 @@ body {
   border-bottom: 2px dashed #520060;
   box-shadow: 0;
 }
-
-/* insertar */
+/* clase para las banderas */
 .icon16 {
   height: 3vh;
- }
-
+}
+.recode-btn {
+  background-color: #dfdfdf;
+}
 /* sección DATES */
 .name {
   width: 45px;

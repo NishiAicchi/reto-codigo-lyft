@@ -27,6 +27,7 @@ $(document).ready(function() {
   $input.on('input', function() {
     // console.log($(this).val());
     if ($(this).val().length >= 6) {
+      nameValue = $(this).val;
       validateName = true;
     } else {
       desactivateBtn();
@@ -57,6 +58,8 @@ $(document).ready(function() {
   // evento para el boton next
   $btn.on('click', function() {
     if (validateName && validateEmail && validateChecked) {
+      localStorage.name = $name.val();
+      localStorage.email = $email.val();
       window.location.href = 'complete.html';
     }
   });
