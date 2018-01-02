@@ -58,9 +58,9 @@ $(document).ready(function() {
   // evento para el boton next
   $btn.on('click', function() {
     if (validateName && validateEmail && validateChecked) {
+      window.location.href = 'complete.html';
       localStorage.name = $name.val();
       localStorage.email = $email.val();
-      window.location.href = 'complete.html';
     }
   });
 });
