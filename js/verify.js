@@ -8,7 +8,7 @@ $(document).ready(function() {
   $phoneShow.append('<strong> +' + localStorage.phone);
 
   // evento que verifica el codigo ingresado
-  $labCode.on('keyup', function(e) {
+  $labCode.on('input', function(e) {
     $count = ($(this).val());
     if ($count === localStorage.code) {
       $labCode.attr('disabled', 'disabled');

@@ -99,11 +99,7 @@ body {
   width: 45px;
 }
 .double-input .form-control{
-  width: 50%;
-  border-collapse: inherit;
-}
-.double-input .first {
-  border-right-width: 0px;
+  width: 129%;
 }
 .double-input .last {
   border-left-width: 0px;
