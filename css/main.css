@@ -130,9 +130,6 @@ body {
   .home-img:hover {
     filter: blur(3px);
   }
-  .vw100 {
-    width: 94vw;
-  }
   .btn-home {
     border: 2px solid #e70a8b;
     color: #ffffff;

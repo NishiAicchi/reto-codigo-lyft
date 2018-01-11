@@ -9,4 +9,15 @@ $(document).ready(function() {
   $logo.animate({ height: '250px', 
     width: '400px', 
     opacity: '.6'}, 900);
+    
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC8KvlkQDCQgcieBZ8zxIH-HstrxjtDCRw",
+    authDomain: "lyft-prueba.firebaseapp.com",
+    databaseURL: "https://lyft-prueba.firebaseio.com",
+    projectId: "lyft-prueba",
+    storageBucket: "lyft-prueba.appspot.com",
+    messagingSenderId: "1069393029767"
+  };
+  firebase.initializeApp(config);
 });

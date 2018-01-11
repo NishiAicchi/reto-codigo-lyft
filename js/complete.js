@@ -6,5 +6,8 @@ $(document).ready(function() {
   $icon.fadeOut(500).fadeIn(2000);
 
   // redireccionando a la vista HOME
-  window.location.href = 'home.html';
+  setTimeout(function() {
+    window.location.href = 'home.html';
+  }, 2000);
+  
 });

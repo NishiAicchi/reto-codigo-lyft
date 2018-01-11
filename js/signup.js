@@ -11,18 +11,19 @@ $(document).ready(function() {
 
   // Evento para seleccionar el país
   $flags.on('click', function(e) {
+    debugger;
     count = $(this).data('option');
     switch (true) {
     case count === 0:
-      $('#PE').replaceAll($('dropdownMenu :first-child'));
+      $('#PE').replaceAll($('#dropdownMenu :first-child')).insertBefore($('#dropdownMenu :first-child'));
       $phone.val('51');
       break;
     case count === 1:
-      $('#BR').replaceAll($('#dropdownMenu :first-child'));
+      $('#BR').insertBefore($('#dropdownMenu :first-child'));
       $phone.val('55');
       break;
     case count === 2:
-      $('#USA').replaceAll($('#dropdownMenu :first-child'));
+      $('#USA').insertBefore($('#dropdownMenu :first-child'));
       $phone.val('01');
       break;
     }

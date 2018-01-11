@@ -59,7 +59,7 @@ $(document).ready(function() {
   $btn.on('click', function() {
     if (validateName && validateEmail && validateChecked) {
       window.location.href = 'complete.html';
-      localStorage.name = $name.val();
+      localStorage.name = $input.val();
       localStorage.email = $email.val();
     }
   });
