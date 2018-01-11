@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  // Initialize Firebase
+  var config = {
+    apiKey: 'AIzaSyDfXZvExNzWFN-pYjZNlopRN8Skc_dafIU',
+    authDomain: 'lyft-test-fb.firebaseapp.com',
+    databaseURL: 'https://lyft-test-fb.firebaseio.com',
+    projectId: 'lyft-test-fb',
+    storageBucket: 'lyft-test-fb.appspot.com',
+    messagingSenderId: '252613794326'
+  };
+  firebase.initializeApp(config);
+
+
   setTimeout(function() {
     window.location.href = 'views/home.html';
   }, 3000);
@@ -9,15 +21,4 @@ $(document).ready(function() {
   $logo.animate({ height: '250px', 
     width: '400px', 
     opacity: '.6'}, 900);
-    
-    // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC8KvlkQDCQgcieBZ8zxIH-HstrxjtDCRw",
-    authDomain: "lyft-prueba.firebaseapp.com",
-    databaseURL: "https://lyft-prueba.firebaseio.com",
-    projectId: "lyft-prueba",
-    storageBucket: "lyft-prueba.appspot.com",
-    messagingSenderId: "1069393029767"
-  };
-  firebase.initializeApp(config);
 });
